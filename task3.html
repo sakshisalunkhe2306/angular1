@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 3 - Two Way Binding Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="bindingApp" ng-controller="BindingController">
+
+    <h2>Task 3: Two-Way Binding Demo</h2>
+
+    <label>Enter Student Name: </label>
+    <input type="text" ng-model="studentName">
+    <p><b>Live Preview:</b> {{ studentName }}</p>
+
+    <script>
+        var app = angular.module("bindingApp", []);
+        app.controller("BindingController", function($scope) {
+            $scope.studentName = "";
+        });
+    </script>
+</body>
+</html>
