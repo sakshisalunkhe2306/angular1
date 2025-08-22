@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 1 - Hello AngularJS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="helloApp" ng-controller="HelloController">
+
+    <h2>Task 1: Hello AngularJS App</h2>
+    <p>{{ message }}</p>
+
+    <script>
+        var app = angular.module("helloApp", []);
+        app.controller("HelloController", function($scope) {
+            $scope.message = "Hello, AngularJS!";
+        });
+    </script>
+</body>
+</html>
